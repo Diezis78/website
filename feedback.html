@@ -16,11 +16,19 @@
   
       <ul class="menu-list">
         <li class="menu-list-item"><a href="./index.html">Главная</a></li>
-        <li class="menu-list-item"><a href="./about_us.html">О нас</a></li>
-        <li class="menu-list-item"><a href="#">Статьи</a></li>
-        <li class="menu-list-item"><a href="#">Теги</a></li>
-        <li class="menu-list-item"><a href="#">Темы</a></li>
-        <li class="menu-list-item"><a href="#">Галерея</a></li>
+        <li class="menu-list-item"><a href="./about_us.html">О нас</a></li>       
+        <li class="menu-list-item"><a href="./avail_enviro.html">Доступная среда</a></li>
+        <li class="menu-list-item"><a href="./job_openings.html">Вакансии</a></li>
+        <li class="menu-list-item"><a href="./gallery.html">Галерея</a></li>
+        <li class="menu-list-item"><a href="#">Документы</a>
+          <ul>
+            <li><a href="./receipts.html">Документы для поступления</a></li>
+            <br>
+            <li><a href="./requisites.html">Реквизиты</a></li>
+            <br>
+            <li><a href="./regulation.html">Устав</a></li>
+          </ul>
+        </li>
         <li class="menu-list-item"><a href="#">Контакты</a>
           <ul>
             <li><a href="./kontact.html">Структура и контакты</a></li>
@@ -34,42 +42,59 @@
       
     </nav>
   
-      <h1 class="slogan">
-        Дом ветеранов войны и труда №1
+    <h1 class="slogan">
+      <br>
+      Дом ветеранов войны и труда №1
       </h1>   
          
   </header>
-     
-      <div class="page-content">
+     <div><h1 class="dosug">Обратная связь</h1></div>
+      <div class="slideshow-containerG">
         
-        <main class="articles">
-          <h2 class="dosug">Обратная связь</h2>
-          <div class="container">
-            <form action="action_page.php">
-          
-              <label for="fname">Имя</label>
-              <input type="text" id="fname" name="firstname" placeholder="Ваше Имя..">
-          
-              <label for="lname">Фамилия</label>
-              <input type="text" id="lname" name="lastname" placeholder="Ваша Фамилия..">
-          
-              <label for="country">Страна</label>
-              <select id="country" name="Страна">
-                <option value="australia">Белорусия</option>
-                <option value="canada">Украина</option>
-                <option value="usa">Россия</option>
-              </select>
-          
-              <label for="subject">Тема</label>
-              <textarea id="subject" name="subject" placeholder="Напишите что-нибудь.." style="height:200px"></textarea>
-          
-              <input type="Submit" value="Отправить">
-          
-            </form>
+        <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+          <!-- Поле ввода имени -->
+          <input name="name" type="text" placeholder="Ваше ФИО" />
+          <br>
+          <!-- Поле ввода почты  -->
+          <input name="email" type="text" placeholder="Ваша почта" />
+          <br>
+          <!-- Поле ввода для темы сообщения -->
+          <input size="30" name="header" type="text" placeholder="Тема" />
+          <br>
+          <!-- Текстовое поле для самого сообщения -->
+          <textarea cols="32" name="message" rows="5" placeholder="Текст сообщения">  
+          </textarea>
+          <br>
+          <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+          <input type="submit" value="Отправить" />
+        </form>
           </div> 
-      </div>
-       </main>
-      
+     
+      <style>
+      body {
+        /*text-align: center;*/
+        margin: 10;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+      }
+      /* Настраиваем внешний вид полей ввода*/
+      input {
+        display: inline-block;
+        margin: 10px auto;
+        border: 2px solid #eee;
+        padding: 10px 20px;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+      }
+      textarea {
+        display: inline-block;
+        margin: 10px auto;
+        border: 2px solid #eee;
+        padding: 10px 20px;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+      }
+      </style>
        <footer>
         
         <ul class="socials">
